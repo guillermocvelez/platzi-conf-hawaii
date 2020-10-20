@@ -19,11 +19,11 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="57" >
     
 
     <!-- HEADER -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/assets/images/platzi-logo.png" alt="Platzi-Logo">
@@ -33,19 +33,19 @@
               <span class="navbar-toggler-icon"></span>
             </button>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbar">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">La conferencia</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#main">La conferencia</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Los oradores</a>
+                  <a class="nav-link" href="#speakers">Los oradores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">El lugar y la fecha</a>
+                    <a class="nav-link" href="#place-time">El lugar y la fecha</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Conviertete en orador</a>
+                    <a class="nav-link" href="#orador">Conviertete en orador</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-platzi" href="#">Compra tickets</a>
@@ -189,6 +189,52 @@
 
     <!-- /FECHA Y LA HORA -->
 
+     <!--CONVIERTETE EN SPEAKER  -->
+
+     <section id="orador" class="pt-2 pb-2">
+         <div class="container">
+             <div class="row">
+                <div class="col text-center text-uppercase mb-4">
+                <small>Conviertete en</small>
+                <h2>orador</h2>
+            </div>
+             </div>
+
+             <div class="row">
+                 <div class="col text-center">
+                    <p>Antate como orador para dar una  <abbr data-toggle="tooltip" title="Charla de 5 minutos">charla ignite</abbr>. Cuentanos de qué quieres hablar!</p>
+                 </div>
+             </div>
+
+             <div class="row">
+                <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+                    <form>
+                        <div class="form-row">
+                          <div class="form-group col-12 col-md-6">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                          </div>
+                          <div class="form-group col-12 col-md-6">
+                            <input type="text" class="form-control" placeholder="Apellido">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <textarea name="text" class="form-control form-control-lg" id="" cols="30" rows="5" placeholder="Sobre que quieres hablar"></textarea>
+                                <small class="form-text text-muted mb-2">Recuerda incluir un título para tu charla</small>
+                            </div>
+                        </div>
+                        <dov class="form-row">
+                            <div class="col">
+                                <button type="button" class="btn btn-platzi btn-block mb-2">Enviar</button>
+                            </div>
+                        </dov>
+                      </form>
+                </div>
+             </div>
+         </div>
+     </section>
+
+      <!-- /CONVIERTETE EN SPEAKER -->
 
 
 
@@ -236,5 +282,6 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
